@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ## Device Connection & Initialization
 
 ```python
-from libspec import ASQESpectrometer
+from libspectr import ASQESpectrometer
 
 spec = ASQESpectrometer()                    # Class Initialization
 spec.configure_acquisition()                 # Initial Device Configuration
@@ -112,7 +112,7 @@ wavelength, intensity = spec.get_calibrated_spectrum()  # Get the spectrum data 
 ### Example: Get spectrum with standard parameters with normalization
 
 ```python
-from libspec import ASQESpectrometer
+from libspectr import ASQESpectrometer
 
 spec = ASQESpectrometer()
 spec.configure_acquisition()
@@ -133,7 +133,7 @@ wavelength, spectrum = spec.normalize_spectrum()
 ### Example: Get and plot spectrum data
 
 ```python
-from libspec import ASQESpectrometer
+from libspectr import ASQESpectrometer
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -154,7 +154,7 @@ plt.show()
 ### Example: Real-time plotting during measurements (Jupyter)
 
 ```python
-from libspec import ASQESpectrometer
+from libspectr import ASQESpectrometer
 import numpy as np
 import matplotlib.pyplot as plt
 from IPython.display import display, clear_output
@@ -211,7 +211,7 @@ python spectrum.py
 
 ```python
 # spectrum.py
-from libspec import ASQESpectrometer
+from libspectr import ASQESpectrometer
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -272,7 +272,7 @@ python spectrum_norm.py
 ```python
 # spectrum_norm.py
 
-from libspec import ASQESpectrometer
+from libspectr import ASQESpectrometer
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -331,7 +331,7 @@ python spectrum_calib.py
 ```python
 
 # spectrum_calib.py
-from libspec import ASQESpectrometer
+from libspectr import ASQESpectrometer
 import numpy as np
 import matplotlib.pyplot as plt
 
