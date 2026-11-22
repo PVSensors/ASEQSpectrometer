@@ -1,5 +1,5 @@
 # spectrum.py
-from libspec import ASQESpectrometer
+from libspectr import ASQESpectrometer
 import numpy as np
 import matplotlib.pyplot as plt
 
